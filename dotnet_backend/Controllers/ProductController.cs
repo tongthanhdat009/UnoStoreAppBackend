@@ -19,7 +19,7 @@ public class ProductsController : ControllerBase
     }
 
     [HttpGet]
-    [AllowAnonymous] // ✅ Cho phép truy cập không cần token (chỉ để test)
+    [AllowAnonymous] 
     public async Task<IActionResult> GetProducts()
     {
         var products = await _productService.GetAllProductsAsync();

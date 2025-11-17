@@ -108,6 +108,7 @@ public class OrderController : ControllerBase
     }
 
     [HttpPost]
+    [AllowAnonymous]
     public async Task<IActionResult> CreateOrder(OrderDto orderDto)
     {
         try
